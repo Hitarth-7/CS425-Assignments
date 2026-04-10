@@ -1,3 +1,9 @@
+/*
+Compile the code using the command: g++ -std=c++14 assgn3Q1.cpp -o assgn3Q1
+Run the code using the command: ./assgn3Q1
+and then the user will be prompted to enter the source and destination vertices.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -133,6 +139,7 @@ int main()
             costs[currPar][currChild.first] = currChild.second;
         }
     }
+    cout << "\n\n";
     cout << "Dijkstras Algo Path" << '\n';
     dijkstras(adjList, dist, par, src);
     printPath(costs, par, dest);
